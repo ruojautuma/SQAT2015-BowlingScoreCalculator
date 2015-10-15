@@ -15,4 +15,8 @@ public class TestBowlingScoreCalculator {
 		assertEquals(expected, actual);
 	}
 
+	@Test
+	public void testTwoFramesCumulativeScoreEqualsTwelve() {
+		fail("Not yet implemented");
+	}
 }
