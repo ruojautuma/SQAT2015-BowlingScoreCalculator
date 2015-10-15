@@ -1,0 +1,10 @@
+FileOpenedAction 1444898072498 TestBowlingScoreCalculator.java 223 1 1 0
+FileOpenedAction 1444898455152 Frame.java 794 6 7 0
+FileOpenedAction 1444898456342 BowlingGame.java 584 5 2 0
+RefactoringAction 1444898506258 TestBowlingScoreCalculator.java RENAME test()=>void testOne() METHOD
+RefactoringAction 1444898507778 TestBowlingScoreCalculator.java RENAME testOne()=>void testOneFrame() METHOD
+RefactoringAction 1444898515797 TestBowlingScoreCalculator.java RENAME testOneFrame()=>void testOneFrameCumulativeScore() METHOD
+RefactoringAction 1444898522819 TestBowlingScoreCalculator.java RENAME testOneFrameCumulativeScore()=>void testOneFrameCumulativeScoreEquals() METHOD
+RefactoringAction 1444898532837 TestBowlingScoreCalculator.java RENAME testOneFrameCumulativeScoreEquals()=>void testOneFrameCumulativeScoreEqualsFour() METHOD
+RefactoringAction 1444898621400 TestBowlingScoreCalculator.java ADD import org.unioulu.tol.sqat.bsc.Frame IMPORT
+EditAction 1444898695929 TestBowlingScoreCalculator.java 384 1 4 0
