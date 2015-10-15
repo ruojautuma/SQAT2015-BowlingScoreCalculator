@@ -12,7 +12,7 @@ public class TestBowlingScoreCalculator {
 		Frame first = new Frame(2, 2);
 		int expected = 2+2;
 		int actual = first.score();
-		fail("Not yet implemented");
+		assertEquals(expected, actual);
 	}
 
 }
