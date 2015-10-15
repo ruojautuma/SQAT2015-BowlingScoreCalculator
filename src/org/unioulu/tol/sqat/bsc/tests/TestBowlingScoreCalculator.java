@@ -63,4 +63,12 @@ public class TestBowlingScoreCalculator {
 		
 		assertEquals(expected, actual);		
 	}
+	
+	@Test
+	public void testSpareOnLastFrameCumulativeScoreEqualsTen() {
+		BowlingGame game = new BowlingGame();
+		for(int i=0;i<9;i++) {
+			game.addFrame(new Frame(0,0));
+		}
+	}
 }
