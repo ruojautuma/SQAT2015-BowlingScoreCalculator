@@ -23,6 +23,7 @@ public class TestBowlingScoreCalculator {
 		BowlingGame game = new BowlingGame();
 		Frame first = new Frame(2, 2);
 		Frame second = new Frame(2, 6);
+		game.addFrame(first);
 		
 		int expected = 2+2+2+6;
 		int actual = game.score();
