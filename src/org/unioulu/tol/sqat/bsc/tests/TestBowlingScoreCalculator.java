@@ -49,4 +49,18 @@ public class TestBowlingScoreCalculator {
 		
 		assertEquals(expected, actual);		
 	}
+	
+	@Test
+	public void testStrikeOnFirstFrameCumulativeScoreEqualsTwentyEight() {
+		BowlingGame game = new BowlingGame();
+		Frame first = new Frame(10, 0);
+		Frame second = new Frame(3, 6);
+		game.addFrame(first);
+		game.addFrame(second);
+
+		int expected = 10+(3+6)+3+6;
+		int actual = game.score();
+		
+		assertEquals(expected, actual);		
+	}
 }
