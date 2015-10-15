@@ -31,4 +31,23 @@ public class TestBowlingScoreCalculator {
 		
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testSpareOnThirdFrameCumulativeScoreEqualsThirteen() {
+		BowlingGame game = new BowlingGame();
+		Frame first = new Frame(1, 1);
+		Frame second = new Frame(1, 1);
+		Frame third = new Frame(7, 3); //spare
+		Frame fourth = new Frame(3, 0);
+		game.addFrame(first);
+		game.addFrame(second);
+		game.addFrame(third);
+		game.addFrame(fourth);
+		
+		int expected = 1+1+1+1;
+		int actual = game.score();
+		
+		assertEquals(expected, actual);
+		
+	}
 }
