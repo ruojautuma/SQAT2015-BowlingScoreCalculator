@@ -22,8 +22,13 @@ public class BowlingGame {
 	public int score(){
 		int total = 0;
 		Iterator<Frame> frameIter = this.frames.iterator();
+		Frame frame;		
 		while(frameIter.hasNext()) {
-			total += frameIter.next().score();
+			frame = frameIter.next();
+			if(frame.isSpare()) {
+				total += this.frames.get(this.frames.indexOf(frame)+1).getFirstThrow(); //get the first of next throw
+			}
+			total += frame.score();
 		}
 		return total;
 	}
