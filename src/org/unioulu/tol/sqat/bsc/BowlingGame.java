@@ -1,6 +1,7 @@
 package org.unioulu.tol.sqat.bsc;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class BowlingGame {
@@ -11,7 +12,7 @@ public class BowlingGame {
 	public BowlingGame(){}
 	
 	public void addFrame(Frame frame){
-		//to be implemented
+		this.frames.add(frame);
 	}
 	
 	public void setBonus(int firstThrow, int secondThrow) {
@@ -19,8 +20,12 @@ public class BowlingGame {
 	}
 	
 	public int score(){
-		//to be implemented
-		return 0;
+		int total = 0;
+		Iterator<Frame> frameIter = this.frames.iterator();
+		while(frameIter.hasNext()) {
+			total += frameIter.next().score();
+		}
+		return total;
 	}
 	
 	public boolean isNextFrameBonus(){
