@@ -79,4 +79,20 @@ public class TestBowlingScoreCalculator {
 		
 		assertEquals(expected, actual);
 	}
+	
+	@Test
+	public void testStrikeOnLastFrameCumulativeScoreEqualsFourty() {
+		BowlingGame game = new BowlingGame();
+		for(int i=0;i<9;i++) {
+			game.addFrame(new Frame(0,0));
+		}
+		Frame last = new Frame(10, 10);
+		game.addFrame(last);
+		game.setBonus(10, 0);
+		
+		int expected = 9+1+3+3;
+		int actual = game.score();
+		
+		assertEquals(expected, actual);		
+	}
 }

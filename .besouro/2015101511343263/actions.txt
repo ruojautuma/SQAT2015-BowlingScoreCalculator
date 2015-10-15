@@ -120,3 +120,8 @@ EditAction 1444903360862 BowlingGame.java 1483 5 11 0
 UnitTestCaseAction 1444903373660 TestBowlingScoreCalculator.java FAIL
 UnitTestSessionAction 1444903373661 TestBowlingScoreCalculator FAIL
 EditAction 1444903570384 BowlingGame.java 1637 5 11 0
+UnitTestCaseAction 1444903577105 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444903577106 TestBowlingScoreCalculator OK
+RefactoringAction 1444903656360 TestBowlingScoreCalculator.java ADD void testStrikeOnLastFrameCumulativeScoreEquals FIELD
+RefactoringAction 1444903714888 TestBowlingScoreCalculator.java RENAME testStrikeOnLastFrameCumulativeScoreEquals=>void testStrikeOnLastFrameCumulativeScoreEqualsFourty() METHOD
+EditAction 1444903744595 TestBowlingScoreCalculator.java 2360 6 48 6
