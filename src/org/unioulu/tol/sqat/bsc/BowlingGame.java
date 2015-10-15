@@ -27,6 +27,9 @@ public class BowlingGame {
 		Iterator<Frame> frameIter = this.frames.iterator();
 		Frame frame;		
 		while(frameIter.hasNext()) {
+			if(frame.isLastFrame()) {
+				break;
+			}
 			frame = frameIter.next();
 			if(frame.isSpare()) {
 				total += this.frames.get(this.frames.indexOf(frame)+1).getFirstThrow(); //get the first of next throw
