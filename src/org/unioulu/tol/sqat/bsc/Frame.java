@@ -41,7 +41,11 @@ public class Frame {
 	
 	public void setLast() {
 		this.last = true;
-		this.bonus = 3;
+		if(this.isSpare()) {
+			this.bonus = 2;
+		} else if(this.isStrike()) {
+			this.bonus = 3;
+		}
 	}
 
 	//bonus throws
