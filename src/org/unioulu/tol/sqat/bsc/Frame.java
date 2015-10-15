@@ -21,7 +21,7 @@ public class Frame {
 	
 	//return whether a frame is a spare or not
 	public boolean isSpare(){
-		return (this.firstThrow+this.secondThrow == 10) ? true : false;
+		return ((this.firstThrow+this.secondThrow == 10) && !this.isStrike()) ? true : false;
 	}
 
 	public int getFirstThrow() {
