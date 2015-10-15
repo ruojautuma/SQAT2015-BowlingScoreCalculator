@@ -71,6 +71,7 @@ public class TestBowlingScoreCalculator {
 			game.addFrame(new Frame(0,0));
 		}
 		Frame last = new Frame(9, 1);
+		game.addFrame(last);
 		game.setBonus(3, 0);
 		
 		int expected = 9+1+3+3;
