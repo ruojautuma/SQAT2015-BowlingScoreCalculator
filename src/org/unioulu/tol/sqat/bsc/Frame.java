@@ -4,6 +4,7 @@ public class Frame {
 	private int firstThrow;
 	private int secondThrow;
 	private boolean last = false;
+	private int bonus = 0;
 	
 	public Frame(int firstThrow, int secondThrow){
 		this.firstThrow = firstThrow;
@@ -40,11 +41,11 @@ public class Frame {
 	
 	public void setLast() {
 		this.last = true;
+		this.bonus = 3;
 	}
 
 	//bonus throws
 	public int bonus(){
-		//to be implemented
-		return 0;
+		return this.bonus;
 	}
 }

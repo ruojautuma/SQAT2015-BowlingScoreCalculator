@@ -88,3 +88,5 @@ EditAction 1444901724485 Frame.java 996 8 9 0
 RefactoringAction 1444901769167 Frame.java ADD void setLast FIELD
 RefactoringAction 1444901772181 Frame.java RENAME setLast=>void setLast() METHOD
 EditAction 1444901783857 Frame.java 1050 9 10 0
+RefactoringAction 1444901805269 Frame.java ADD int bonus FIELD
+EditAction 1444901891069 Frame.java 1080 9 11 0
