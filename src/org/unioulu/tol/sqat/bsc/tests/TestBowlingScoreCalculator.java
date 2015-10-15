@@ -81,7 +81,7 @@ public class TestBowlingScoreCalculator {
 	}
 	
 	@Test
-	public void testStrikeOnLastFrameCumulativeScoreEqualsFourty() {
+	public void testThreeStrikesOnLastFrameCumulativeScoreEqualsFourty() {
 		BowlingGame game = new BowlingGame();
 		for(int i=0;i<9;i++) {
 			game.addFrame(new Frame(0,0));

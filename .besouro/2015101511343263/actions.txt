@@ -126,3 +126,6 @@ RefactoringAction 1444903656360 TestBowlingScoreCalculator.java ADD void testStr
 RefactoringAction 1444903714888 TestBowlingScoreCalculator.java RENAME testStrikeOnLastFrameCumulativeScoreEquals=>void testStrikeOnLastFrameCumulativeScoreEqualsFourty() METHOD
 EditAction 1444903744595 TestBowlingScoreCalculator.java 2360 6 48 6
 EditAction 1444903783497 TestBowlingScoreCalculator.java 2364 6 48 6
+RefactoringAction 1444903815251 TestBowlingScoreCalculator.java RENAME testStrikeOnLastFrameCumulativeScoreEqualsFourty()=>void testThreeStrikeOnLastFrameCumulativeScoreEqualsFourty() METHOD
+RefactoringAction 1444903816777 TestBowlingScoreCalculator.java RENAME testThreeStrikeOnLastFrameCumulativeScoreEqualsFourty()=>void testThreeStrikesOnLastFrameCumulativeScoreEqualsFourty() METHOD
+EditAction 1444903816860 TestBowlingScoreCalculator.java 2370 6 48 6
