@@ -47,7 +47,6 @@ public class TestBowlingScoreCalculator {
 		int expected = 1+1+1+1+(7+3+3)+3+2;
 		int actual = game.score();
 		
-		assertEquals(expected, actual);
-		
+		assertEquals(expected, actual);		
 	}
 }

@@ -52,3 +52,6 @@ RefactoringAction 1444900211711 Frame.java ADD int getFirstThrow() METHOD
 RefactoringAction 1444900211713 Frame.java ADD int getSecondThrow() METHOD
 EditAction 1444900212698 Frame.java 949 8 9 0
 EditAction 1444900637543 BowlingGame.java 922 5 7 0
+UnitTestCaseAction 1444900653995 TestBowlingScoreCalculator.java OK
+UnitTestSessionAction 1444900653997 TestBowlingScoreCalculator OK
+EditAction 1444900707027 TestBowlingScoreCalculator.java 1260 3 24 3
