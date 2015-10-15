@@ -37,6 +37,10 @@ public class Frame {
 	public boolean isLastFrame(){		
 		return this.last;
 	}
+	
+	public void setLast() {
+		this.last = true;
+	}
 
 	//bonus throws
 	public int bonus(){
