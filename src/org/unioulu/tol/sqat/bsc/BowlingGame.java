@@ -32,13 +32,21 @@ public class BowlingGame {
 				break;
 			}
 			frame = frameIter.next();
-			if(!frame.isLastFrame()) {
-				if(frame.isSpare()) {
+
+			if(frame.isSpare()) {
+				if(this.isNextFrameBonus()) {
+					total += this.bonus.getFirstThrow();
+				} else {
 					total += this.frames.get(this.frames.indexOf(frame)+1).getFirstThrow(); //get the first of next throw
-				} else if(frame.isStrike()) {
+				}
+			} else if(frame.isStrike()) {
+				if(this.isNextFrameBonus()) {
+					total += this.bonus.score();
+				} else {
 					total += this.frames.get(this.frames.indexOf(frame)+1).score(); //get the score of next throw
 				}
 			}
+
 			total += frame.score();
 		}
 		if(this.isNextFrameBonus()) {
