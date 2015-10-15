@@ -12,6 +12,9 @@ public class BowlingGame {
 	public BowlingGame(){}
 	
 	public void addFrame(Frame frame){
+		if(this.frames.size() == 9) {
+			frame.setLast();
+		}
 		this.frames.add(frame);
 	}
 	
