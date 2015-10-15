@@ -24,6 +24,7 @@ public class TestBowlingScoreCalculator {
 		Frame first = new Frame(2, 2);
 		Frame second = new Frame(2, 6);
 		game.addFrame(first);
+		game.addFrame(second);
 		
 		int expected = 2+2+2+6;
 		int actual = game.score();
