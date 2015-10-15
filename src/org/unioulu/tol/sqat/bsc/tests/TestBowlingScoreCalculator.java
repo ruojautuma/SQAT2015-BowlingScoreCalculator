@@ -65,14 +65,15 @@ public class TestBowlingScoreCalculator {
 	}
 	
 	@Test
-	public void testSpareOnLastFrameCumulativeScoreEqualsTen() {
+	public void testSpareOnLastFrameCumulativeScoreEqualsSixteen() {
 		BowlingGame game = new BowlingGame();
 		for(int i=0;i<9;i++) {
 			game.addFrame(new Frame(0,0));
 		}
-		Frame last = new Frame(9, 0);
+		Frame last = new Frame(9, 1);
+		game.setBonus(3, 0);
 		
-		int expected = 9+1;
+		int expected = 9+1+3+3;
 		int actual = game.score();
 		
 		assertEquals(expected, actual);
