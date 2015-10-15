@@ -39,6 +39,9 @@ public class BowlingGame {
 			}
 			total += frame.score();
 		}
+		if(this.isNextFrameBonus()) {
+			total += this.bonus.score();
+		}
 		return total;
 	}
 	
