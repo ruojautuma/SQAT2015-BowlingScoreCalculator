@@ -125,3 +125,4 @@ UnitTestSessionAction 1444903577106 TestBowlingScoreCalculator OK
 RefactoringAction 1444903656360 TestBowlingScoreCalculator.java ADD void testStrikeOnLastFrameCumulativeScoreEquals FIELD
 RefactoringAction 1444903714888 TestBowlingScoreCalculator.java RENAME testStrikeOnLastFrameCumulativeScoreEquals=>void testStrikeOnLastFrameCumulativeScoreEqualsFourty() METHOD
 EditAction 1444903744595 TestBowlingScoreCalculator.java 2360 6 48 6
+EditAction 1444903783497 TestBowlingScoreCalculator.java 2364 6 48 6

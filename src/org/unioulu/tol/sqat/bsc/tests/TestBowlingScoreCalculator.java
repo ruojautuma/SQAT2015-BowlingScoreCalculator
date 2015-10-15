@@ -90,7 +90,7 @@ public class TestBowlingScoreCalculator {
 		game.addFrame(last);
 		game.setBonus(10, 0);
 		
-		int expected = 9+1+3+3;
+		int expected = 10+10+10+10;
 		int actual = game.score();
 		
 		assertEquals(expected, actual);		
