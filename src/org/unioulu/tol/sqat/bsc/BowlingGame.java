@@ -25,9 +25,10 @@ public class BowlingGame {
 	public int score(){
 		int total = 0;
 		Iterator<Frame> frameIter = this.frames.iterator();
-		Frame frame;		
+		Frame frame = null;		
 		while(frameIter.hasNext()) {
-			if(frame.isLastFrame()) {
+			if(frame != null && frame.isLastFrame()) {
+				//in case the previous frame was the last but there are still more frames
 				break;
 			}
 			frame = frameIter.next();
