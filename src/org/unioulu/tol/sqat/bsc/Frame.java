@@ -25,6 +25,14 @@ public class Frame {
 		return (this.firstThrow+this.secondThrow == 10) ? true : false;
 	}
 
+	public int getFirstThrow() {
+		return firstThrow;
+	}
+
+	public int getSecondThrow() {
+		return secondThrow;
+	}
+
 	//return whether this is the last frame of the match
 	public boolean isLastFrame(){
 		//to be implemented
