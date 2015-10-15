@@ -70,5 +70,11 @@ public class TestBowlingScoreCalculator {
 		for(int i=0;i<9;i++) {
 			game.addFrame(new Frame(0,0));
 		}
+		Frame last = new Frame(9, 0);
+		
+		int expected = 9+1;
+		int actual = game.score();
+		
+		assertEquals(expected, actual);
 	}
 }
