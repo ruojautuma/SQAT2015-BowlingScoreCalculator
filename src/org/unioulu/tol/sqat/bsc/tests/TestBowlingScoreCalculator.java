@@ -76,7 +76,7 @@ public class TestBowlingScoreCalculator {
 		
 		int expected = 9+1+3+3;
 		int actual = game.score();
-		System.out.println(last.isLastFrame());
+		
 		assertEquals(expected, actual);
 	}
 }
